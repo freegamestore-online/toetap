@@ -1,0 +1,13 @@
+{
+  "name": "toetap",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @toetap/web dev",
+    "build": "pnpm --filter @toetap/web build",
+    "preview": "pnpm --filter @toetap/web preview",
+    "typecheck": "pnpm --filter @toetap/web exec tsc -b"
+  }
+}
